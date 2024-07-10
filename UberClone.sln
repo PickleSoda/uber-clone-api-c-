@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UberClone.Core", "UberClone.Core\UberClone.Core.csproj", "{6511CBC7-4982-42B2-A71B-5DF69D6EF94A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UberClone.Application", "UberClone.Application\UberClone.Application.csproj", "{747C900B-FBA8-498A-B482-9BED59306C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UberClone.Infrastructure", "UberClone.Infrastructure\UberClone.Infrastructure.csproj", "{EDFB048A-5284-4032-8E8E-EC4CD01494D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UberClone.WebUI", "UberClone.WebUI\UberClone.WebUI.csproj", "{34E21565-D4F4-4E95-9616-42DA7712B973}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6511CBC7-4982-42B2-A71B-5DF69D6EF94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6511CBC7-4982-42B2-A71B-5DF69D6EF94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6511CBC7-4982-42B2-A71B-5DF69D6EF94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6511CBC7-4982-42B2-A71B-5DF69D6EF94A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747C900B-FBA8-498A-B482-9BED59306C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747C900B-FBA8-498A-B482-9BED59306C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747C900B-FBA8-498A-B482-9BED59306C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747C900B-FBA8-498A-B482-9BED59306C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDFB048A-5284-4032-8E8E-EC4CD01494D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFB048A-5284-4032-8E8E-EC4CD01494D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFB048A-5284-4032-8E8E-EC4CD01494D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFB048A-5284-4032-8E8E-EC4CD01494D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E21565-D4F4-4E95-9616-42DA7712B973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E21565-D4F4-4E95-9616-42DA7712B973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E21565-D4F4-4E95-9616-42DA7712B973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E21565-D4F4-4E95-9616-42DA7712B973}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

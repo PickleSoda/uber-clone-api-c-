@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5aG6z3T920c=",
+  "success": true,
+  "projectFilePath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/UberClone.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/achi/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.1/microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

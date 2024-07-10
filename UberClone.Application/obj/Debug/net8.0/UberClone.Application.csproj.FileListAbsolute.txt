@@ -1,0 +1,15 @@
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/bin/Debug/net8.0/UberClone.Application.deps.json
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/bin/Debug/net8.0/UberClone.Application.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/bin/Debug/net8.0/UberClone.Application.pdb
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/bin/Debug/net8.0/UberClone.Core.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/bin/Debug/net8.0/UberClone.Core.pdb
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.csproj.AssemblyReference.cache
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.AssemblyInfoInputs.cache
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.AssemblyInfo.cs
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.csproj.CoreCompileInputs.cache
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClon.99EC299C.Up2Date
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/refint/UberClone.Application.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.pdb
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/ref/UberClone.Application.dll

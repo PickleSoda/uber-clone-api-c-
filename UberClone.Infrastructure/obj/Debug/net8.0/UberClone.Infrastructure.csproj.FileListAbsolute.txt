@@ -1,0 +1,15 @@
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/bin/Debug/net8.0/UberClone.Infrastructure.deps.json
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/bin/Debug/net8.0/UberClone.Infrastructure.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/bin/Debug/net8.0/UberClone.Infrastructure.pdb
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/bin/Debug/net8.0/UberClone.Core.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/bin/Debug/net8.0/UberClone.Core.pdb
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.csproj.AssemblyReference.cache
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.AssemblyInfoInputs.cache
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.AssemblyInfo.cs
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.csproj.CoreCompileInputs.cache
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClon.60691BFB.Up2Date
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/refint/UberClone.Infrastructure.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/UberClone.Infrastructure.pdb
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/obj/Debug/net8.0/ref/UberClone.Infrastructure.dll
