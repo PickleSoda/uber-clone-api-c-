@@ -248,6 +248,9 @@
               "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/UberClone.Application.csproj": {
                 "projectPath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/UberClone.Application.csproj"
               },
+              "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/UberClone.Core.csproj": {
+                "projectPath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/UberClone.Core.csproj"
+              },
               "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/UberClone.Infrastructure.csproj": {
                 "projectPath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/UberClone.Infrastructure.csproj"
               }

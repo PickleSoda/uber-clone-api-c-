@@ -4,19 +4,23 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using UberClone.Core.Interfaces;
-using UberClone.Infrastructure.Repositories;
-using UberClone.Core.Services;
+using UberClone.Core.Interfaces; // Ensure this is the correct namespace for ITripRepository
+using UberClone.Infrastructure.Repositories; // Ensure this is the correct namespace for TripRepository
+using UberClone.Application.Services; // Ensure this is the correct namespace for TripService
+using UberClone.Application.Repositories; // Ensure this is the correct namespace for TripService
+using Microsoft.EntityFrameworkCore;
+using UberClone.Infrastructure.Contexts; // Assuming MockDbContext is in this namespace
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.services.AddScoped<ITripRepository, TripRepository>();
-builder.services.AddScoped<ITripService, TripService>();
-builder.services.AddDbContext<MockDbContext>(options =>
-        options.UseInMemoryDatabase("UberCloneDb"));
+builder.Services.AddScoped<ITripRepository, TripRepository>();
+builder.Services.AddScoped<ITripService, TripService>();
+builder.Services.AddDbContext<MockDbContext>(options =>
+        options.UseInMemoryDatabase("UberCloneDb")); // Ensure you have the EF Core InMemory package installed
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,8 +31,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
 
 var summaries = new[]
 {

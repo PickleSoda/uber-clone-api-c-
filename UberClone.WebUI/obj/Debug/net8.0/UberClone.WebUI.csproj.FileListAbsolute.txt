@@ -43,3 +43,5 @@
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.WebUI/obj/Debug/net8.0/UberClone.WebUI.pdb
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.WebUI/obj/Debug/net8.0/UberClone.WebUI.genruntimeconfig.cache
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.WebUI/obj/Debug/net8.0/ref/UberClone.WebUI.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.WebUI/obj/Debug/net8.0/UberClone.WebUI.sourcelink.json
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.WebUI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll

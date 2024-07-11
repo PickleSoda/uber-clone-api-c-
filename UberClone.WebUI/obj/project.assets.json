@@ -1312,6 +1312,7 @@
       "Microsoft.AspNetCore.OpenApi >= 8.0.5",
       "Swashbuckle.AspNetCore >= 6.6.2",
       "UberClone.Application >= 1.0.0",
+      "UberClone.Core >= 1.0.0",
       "UberClone.Infrastructure >= 1.0.0"
     ]
   },
@@ -1342,6 +1343,9 @@
           "projectReferences": {
             "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/UberClone.Application.csproj": {
               "projectPath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/UberClone.Application.csproj"
+            },
+            "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/UberClone.Core.csproj": {
+              "projectPath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/UberClone.Core.csproj"
             },
             "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/UberClone.Infrastructure.csproj": {
               "projectPath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/UberClone.Infrastructure.csproj"
