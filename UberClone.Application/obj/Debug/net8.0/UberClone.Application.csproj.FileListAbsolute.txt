@@ -13,3 +13,4 @@
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/refint/UberClone.Application.dll
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.pdb
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/ref/UberClone.Application.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Application/obj/Debug/net8.0/UberClone.Application.sourcelink.json

@@ -1,6 +1,7 @@
-namespace UberClone.Core.Entities;
-
-public class Customer : User
+namespace UberClone.Core.Entities
 {
-    public string PaymentMethod { get; set; }
+    public class Customer : User
+    {
+        public string PaymentMethod { get; set; }
+    }
 }

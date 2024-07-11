@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "97HFJr33IbE=",
+  "dgSpecHash": "rViTs0RbtBs=",
   "success": true,
   "projectFilePath": "/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Infrastructure/UberClone.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "/home/achi/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/achi/.nuget/packages/mediatr/12.3.0/mediatr.12.3.0.nupkg.sha512",
+    "/home/achi/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/achi/.nuget/packages/microsoft.entityframeworkcore/8.0.7/microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
     "/home/achi/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.7/microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
     "/home/achi/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.7/microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
+    "/home/achi/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.7/microsoft.entityframeworkcore.inmemory.8.0.7.nupkg.sha512",
     "/home/achi/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/achi/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "/home/achi/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",

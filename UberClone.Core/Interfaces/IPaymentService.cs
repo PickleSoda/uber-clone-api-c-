@@ -1,10 +1,11 @@
 using System.Threading.Tasks;
 using UberClone.Core.Entities;
 
-namespace UberClone.Core.Interfaces;
-
-public interface IPaymentService
+namespace UberClone.Core.Interfaces
 {
-    Task ProcessPaymentAsync(PaymentDetails paymentDetails);
-    Task AddPaymentMethodAsync(int userId, string paymentMethod);
+    public interface IPaymentService
+    {
+        Task ProcessPaymentAsync(PaymentDetails paymentDetails);
+        Task AddPaymentMethodAsync(int userId, string paymentMethod);
+    }
 }

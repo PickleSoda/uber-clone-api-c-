@@ -1,10 +1,22 @@
+using System;
+using System.Linq;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using UberClone.Core.Interfaces;
+using UberClone.Infrastructure.Repositories;
+using UberClone.Core.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.services.AddScoped<ITripRepository, TripRepository>();
+builder.services.AddScoped<ITripService, TripService>();
+builder.services.AddDbContext<MockDbContext>(options =>
+        options.UseInMemoryDatabase("UberCloneDb"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -15,6 +27,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
 
 var summaries = new[]
 {

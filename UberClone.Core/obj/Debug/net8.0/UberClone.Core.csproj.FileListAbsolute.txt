@@ -10,3 +10,4 @@
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/obj/Debug/net8.0/refint/UberClone.Core.dll
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/obj/Debug/net8.0/UberClone.Core.pdb
 /home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/obj/Debug/net8.0/ref/UberClone.Core.dll
+/home/achi/Code/PersonalProjects/uber-clone/uber-clone-api/UberClone.Core/obj/Debug/net8.0/UberClone.Core.sourcelink.json

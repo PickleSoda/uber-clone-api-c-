@@ -1,26 +1,27 @@
-namespace UberClone.Core.Enums;
-
-public enum TripStatus
+namespace UberClone.Core.Enums
 {
-    Requested,
-    Confirmed,
-    Started,
-    Finished,
-    Canceled
-}
+    public enum TripStatus
+    {
+        Requested,
+        Confirmed,
+        Started,
+        Finished,
+        Canceled
+    }
 
-public enum Availability
-{
-    Available,
-    Occupied,
-    Unreachable,
-    OnBreak
-}
+    public enum Availability
+    {
+        Available,
+        Occupied,
+        Unreachable,
+        OnBreak
+    }
 
-public enum RideOptions
-{
-    Lite,
-    Premium,
-    Pet,
-    Minivan
+    public enum RideOptions
+    {
+        Lite,
+        Premium,
+        Pet,
+        Minivan
+    }
 }
