@@ -2,10 +2,10 @@ using System;
 using System.Threading.Tasks;
 using UberClone.Core.Entities;
 using UberClone.Core.Interfaces;
+using UberClone.Core.StateManagement;
 
 namespace UberClone.Application.Services
 {
-    //            tripContext.Attach(new DriverNotificationService(_notificationService)); // Observer for notifying drivers
     public class DriverNotificationService : ITripObserver
     {
         private readonly INotificationService _notificationService;
@@ -15,12 +15,13 @@ namespace UberClone.Application.Services
             _notificationService = notificationService;
         }
 
-        public async Task UpdateAsync(Trip trip)
+        public async Task UpdateAsync(TripEvent tripEvent)
         {
             // Notify drivers about the trip
-            //find available drivers
-            //notificationService.SendNotificationAsync(trip);
-            Console.WriteLine("Notifying drivers about trip: " + trip.Id);
+            Console.WriteLine("Notifying drivers about trip: " + tripEvent.Trip.Id);
+
+            // Simulate finding available drivers and sending notifications
+            await _notificationService.SendNotificationAsync($"{tripEvent.Trip.Driver.Id}",$"Trip {tripEvent.Trip.Id} is now {tripEvent.Status}");
         }
     }
 }

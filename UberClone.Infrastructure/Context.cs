@@ -1,51 +1,52 @@
 using Microsoft.EntityFrameworkCore;
 using UberClone.Core.Entities;
-using UberClone.Core.Enums;
 
 namespace UberClone.Infrastructure.Contexts
 {
     public class MockDbContext : DbContext
     {
         public DbSet<Trip> Trips { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Driver> Drivers { get; set; }
 
         public MockDbContext(DbContextOptions<MockDbContext> options)
             : base(options) { }
 
-        // protected override void OnModelCreating(ModelBuilder modelBuilder)
-        // {
-        //     // Configure the Trip entity
-        //     modelBuilder.Entity<Trip>().HasKey(t => t.Id); // Primary key
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // modelBuilder.Entity<Trip>(entity =>
+            // {
+            //     entity.HasKey(t => t.Id);
+            //     entity.Property(t => t.StartTime).IsRequired();
+            //     entity.OwnsOne(t => t.StartLocation);
+            //     entity.OwnsOne(t => t.EndLocation);
 
-        //     modelBuilder.Entity<Trip>().Property(t => t.StartTime).IsRequired(); // Make StartTime required
+            //     // Configure the relationships
+            //     entity
+            //         .HasOne(t => t.Customer)
+            //         .WithMany(c => c.OrderHistory)
+            //         .OnDelete(DeleteBehavior.Restrict); // No need to specify foreign key
 
-        //     modelBuilder
-        //         .Entity<Trip>()
-        //         .HasOne(t => t.Driver) // Relationship configuration
-        //         .WithMany(d => d.OrderHistory)
-        //         .HasForeignKey(t => t.DriverId);
+            //     entity
+            //         .HasOne(t => t.Driver)
+            //         .WithMany(d => d.OrderHistory)
+            //         .OnDelete(DeleteBehavior.Restrict); // No need to specify foreign key
+            // });
 
-        //     modelBuilder
-        //         .Entity<Trip>()
-        //         .HasOne(t => t.Customer)
-        //         .WithMany(c => c.OrderHistory)
-        //         .HasForeignKey(t => t.CustomerId);
+            // // Ensure configurations for other entities as needed
+            // modelBuilder.Entity<Customer>(entity =>
+            // {
+            //     entity.HasMany<Trip>().WithOne().HasForeignKey(ct => ct.CustomerId);
+            // });
 
-        //     modelBuilder
-        //         .Entity<Trip>()
-        //         .HasData(
-        //             new Trip
-        //             {
-        //                 TripId = 1,
-        //                 Destination = "City Center",
-        //                 DriverId = 1,
-        //                 CustomerId = 1,
-        //                 StartTime = DateTime.Now
-        //             }
-        //         );
-        //     // Additional configurations as needed
+            // modelBuilder.Entity<Driver>(entity =>
+            // {
+            //     entity.HasMany<Trip>().WithOne().HasForeignKey(dt => dt.DriverId);
+            // });
 
-        //     modelBuilder.Entity<Trip>().OwnsOne(t => t.StartLocation);
-        //     modelBuilder.Entity<Trip>().OwnsOne(t => t.EndLocation);
-        // }
+            // // Ensure to ignore the base User.OrderHistory if it's not used or causes conflict
+            // modelBuilder.Entity<User>().Ignore(u => u.OrderHistory);
+        }
     }
 }

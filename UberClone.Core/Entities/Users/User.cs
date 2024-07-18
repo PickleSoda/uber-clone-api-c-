@@ -8,5 +8,6 @@ namespace UberClone.Core.Entities
         public string PhoneNumber { get; set; }
         public double Rating { get; set; }
         public List<Trip> OrderHistory { get; set; }
+        public string Password { get; set; }
     }
 }

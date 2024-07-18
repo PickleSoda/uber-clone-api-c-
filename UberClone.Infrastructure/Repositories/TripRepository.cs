@@ -5,6 +5,7 @@ using UberClone.Core.Entities;
 using UberClone.Core.Interfaces;
 using UberClone.Application.Repositories;
 using UberClone.Infrastructure.Contexts;
+
 namespace UberClone.Infrastructure.Repositories
 {
     public class TripRepository : ITripRepository

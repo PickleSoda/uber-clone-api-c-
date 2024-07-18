@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using UberClone.Core.Enums;
 
 namespace UberClone.Core.StateManagement
 {
@@ -7,9 +8,13 @@ namespace UberClone.Core.StateManagement
         public async Task HandleAsync(TripContext context)
         {
             // Notify drivers about the new trip
-            await context.NotifyObserversAsync();
-            // Transition to the next appropriate state
-            context.TransitionTo(new LookingForDriverState());
+            context.NotifyObservers(
+                new TripEvent { Trip = context.Trip, Status = TripStatus.Requested }
+            );
+
+            // Transition to the next state (e.g., waiting for driver confirmation)
+            context.TransitionTo(new TripConfirmedState());
+            await context.CurrentState.HandleAsync(context);
         }
     }
 }

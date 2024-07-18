@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UberClone.Application.Repositories;
 using UberClone.Core.Entities;
 using UberClone.Core.Enums;
 using UberClone.Core.Interfaces;
@@ -14,10 +15,7 @@ namespace UberClone.Application.Services
         private readonly ITripRepository _tripRepository;
         private readonly INotificationService _notificationService;
 
-        public TripService(
-            ITripRepository tripRepository,
-            INotificationService notificationService
-        )
+        public TripService(ITripRepository tripRepository, INotificationService notificationService)
         {
             _tripRepository = tripRepository;
             _notificationService = notificationService;
@@ -25,15 +23,12 @@ namespace UberClone.Application.Services
 
         public async Task CreateTripAsync(Trip trip)
         {
-            // Assuming the trip is validated and ready to be processed
-            trip.Status = TripStatus.Requested; // Initial status
+            trip.Status = TripStatus.Requested;
             await _tripRepository.AddAsync(trip);
 
-            // Set up the context and initial state
             var tripContext = new TripContext(trip, new TripRequestedState());
-            tripContext.Attach(new DriverNotificationService(_notificationService)); // Observer for notifying drivers
+            tripContext.Attach(new DriverNotificationService(_notificationService));
 
-            // Process the initial state
             await tripContext.CurrentState.HandleAsync(tripContext);
         }
 
@@ -43,11 +38,11 @@ namespace UberClone.Application.Services
             if (trip == null)
                 throw new InvalidOperationException("Trip not found");
 
-            // Set context to a cancellation state
             var tripContext = new TripContext(trip, new TripCanceledState());
+            tripContext.Attach(new DriverNotificationService(_notificationService));
+
             await tripContext.CurrentState.HandleAsync(tripContext);
 
-            // Update the repository
             trip.Status = TripStatus.Canceled;
             await _tripRepository.UpdateAsync(trip);
         }
@@ -58,7 +53,6 @@ namespace UberClone.Application.Services
             if (trip == null)
                 throw new InvalidOperationException("Trip not found");
 
-            // Transition to the appropriate state based on the new status
             ITripState newState = status switch
             {
                 TripStatus.Started => new TripStartingState(),
@@ -68,9 +62,10 @@ namespace UberClone.Application.Services
             };
 
             var tripContext = new TripContext(trip, newState);
+            tripContext.Attach(new DriverNotificationService(_notificationService));
+
             await tripContext.CurrentState.HandleAsync(tripContext);
 
-            // Update the repository
             trip.Status = status;
             await _tripRepository.UpdateAsync(trip);
         }

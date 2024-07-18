@@ -1,47 +1,43 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UberClone.Core.Entities;
 using UberClone.Core.Interfaces;
-
 
 namespace UberClone.Core.StateManagement
 {
     public class TripContext
     {
-        public ITripState CurrentState { get; set; }
+        private readonly List<ITripObserver> _observers = new List<ITripObserver>();
 
-        public Trip Trip { get; set; }
-
-        private List<ITripObserver> Observers = new List<ITripObserver>();
+        public Trip Trip { get; private set; }
+        public ITripState CurrentState { get; private set; }
 
         public TripContext(Trip trip, ITripState initialState)
         {
             Trip = trip;
-            CurrentState = initialState;
+            TransitionTo(initialState);
         }
 
         public void TransitionTo(ITripState state)
         {
             CurrentState = state;
-            CurrentState.HandleAsync(this);
-        }
-
-        public async Task NotifyObserversAsync()
-        {
-            foreach (var observer in Observers)
-            {
-                await observer.UpdateAsync(Trip);
-            }
         }
 
         public void Attach(ITripObserver observer)
         {
-            Observers.Add(observer);
+            _observers.Add(observer);
         }
 
         public void Detach(ITripObserver observer)
         {
-            Observers.Remove(observer);
+            _observers.Remove(observer);
+        }
+
+        public void NotifyObservers(TripEvent tripEvent)
+        {
+            foreach (var observer in _observers)
+            {
+                observer.UpdateAsync(tripEvent);
+            }
         }
     }
 }

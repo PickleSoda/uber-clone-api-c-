@@ -1,4 +1,7 @@
-public interface INotificationService
+namespace UberClone.Core.Interfaces
 {
-    Task SendNotificationAsync(int userId, string message);
+    public interface INotificationService
+    {
+        Task SendNotificationAsync(string userId, string message);
+    }
 }
