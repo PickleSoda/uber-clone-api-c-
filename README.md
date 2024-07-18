@@ -155,5 +155,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any inquiries or issues, please contact [your-email@example.com](mailto:your-email@example.com).
 
 ---
+![final drawio](https://github.com/user-attachments/assets/0f152af3-7f81-4f7b-820c-70db072d510e)
 
 This README provides a detailed overview of the Uber Clone REST API, including its architecture, setup instructions, and key features. It also includes diagrams to help visualize the structure and flow of the application.
+
